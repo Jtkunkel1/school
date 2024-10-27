@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline of Developmental Stages</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+        }
+        header {
+            background-color: #283593;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            padding-top: 5rem; /* Added padding to prevent overlap */
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #283593;
+            top: 120px; /* Adjusted to start below the header */
+            bottom: 0; /* Removed this to stop at the divider */
+            left: 50%;
+            margin-left: -2px;
+        }
+        .section-divider {
+            margin: 2rem 0; /* Adjusted margins to better position dividers */
+            font-size: 1.8rem;
+            color: white;
+            background-color: #283593;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+            position: relative; /* Added position relative for better control */
+            z-index: 1; /* Ensure it's above the line */
+        }
+        .stage {
+            position: relative;
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        .stage h2 {
+            color: #283593;
+            font-size: 1.5rem;
+        }
+        .stage h3 {
+            color: #3d3d5c;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .stage p {
+            color: #555;
+            font-size: 1rem;
+        }
+        .stage:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+        .stage:nth-child(even) {
+            left: 50%;
+        }
+        .stage::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 18px;
+            height: 18px;
+            background-color: #283593;
+            border: 3px solid white;
+            border-radius: 50%;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+        .stage:nth-child(odd)::before {
+            left: calc(100% + 8px);
+        }
+        .stage:nth-child(even)::before {
+            right: calc(100% + 8px);
+        }
+        .timeline-label {
+            position: absolute;
+            top: 50%;
+            width: 120px;
+            padding: 10px;
+            background-color: #283593;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            transform: translateY(-50%);
+        }
+        .stage:nth-child(odd) .timeline-label {
+            right: calc(100% + 20px);
+        }
+        .stage:nth-child(even) .timeline-label {
+            left: calc(100% + 20px);
+        }
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            .stage {
+                width: 100%;
+                text-align: center;
+            }
+            .timeline::after {
+                left: 20px;
+            }
+            .stage::before {
+                left: -9px;
+            }
+            .timeline-label {
+                left: 35px !important;
+                right: auto !important;
+                top: 15px;
+                transform: translateY(0);
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Timeline of Developmental Stages</h1>
+        <h3>Jack Kunkel</h3>
+    </header>
+    <div class="timeline">
+
+        <!-- Erikson's Psychosocial Stages Divider -->
+        <div class="section-divider">Erikson's Psychosocial Stages</div>
+        
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Infancy (Trust vs. Mistrust)</h3>
+            <p>Personal example: As a baby, my parents took care of my every need. Fed me when I was hungry, comforted me when I cried which helped me develop a sense of trust in them.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Early Childhood (Autonomy vs. Shame/Doubt)</h3>
+            <p>Personal example: When I was two years old, I didn't like my parents tying my shoes for me so they bought velcro shoes that I could put on myself making me feel independent and capable.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Preschool (Initiative vs. Guilt)</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>School Age (Industry vs. Inferiority)</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Adolescence (Identity vs. Role Confusion)</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Young Adulthood (Intimacy vs. Isolation)</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Middle Adulthood (Generativity vs. Stagnation)</h3>
+            <p>Plan: I don't plan on having children but I want to be able to live stress free and have a stable job to provide for myself. I will have many nephews and nieces most likely that I can help take care of and watch grow up.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Erikson's Stages</div>
+            <h3>Maturity (Integrity vs. Despair)</h3>
+            <p>Plan: At this stage I hope to be able to look back at my life and feel satisfied that I made the most of every moment and I lived as happily as I could. I expect not to have any regrets at this point or problems looking back at my life and the choices I made.</p>
+        </div>
+
+        <!-- Piaget's Cognitive Development Stages Divider -->
+        <div class="section-divider">Piaget's Cognitive Development Stages</div>
+
+        <div class="stage">
+            <div class="timeline-label">Piaget's Stages</div>
+            <h3>Sensorimotor Stage (Birth to 2 years)</h3>
+            <p>Personal example: My parents shared a story where my older siblings liked to tease me with peekaboo because I would get upset every time they hid but I would get excited when they revealed themselves.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Piaget's Stages</div>
+            <h3>Preoperational Stage (2 to 7 years)</h3>
+            <p>Personal example: When I was around age 4 or 5 I remember that I believed the moon would follow me a night and no one else. I didn't think about how other people see it differently from me.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Piaget's Stages</div>
+            <h3>Concrete Operational Stage (7 to 11 years)</h3>
+            <p>Personal example: I think I was around 8 or 9 and in third grade and I remember my teacher explaining to me the concept of conservation, though she didn't call it that at the time, by pouring water back and forth between two different sized cups showing me that it didn't change the amount of water that was in each cup, I also remember it blowing my mind at the time.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Piaget's Stages</div>
+            <h3>Formal Operational Stage (12 years and up)</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <!-- Kohlberg's Moral Development Levels Divider -->
+        <div class="section-divider">Kohlberg's Moral Development Levels</div>
+
+        <div class="stage">
+            <div class="timeline-label">Kohlberg's Levels</div>
+            <h3>Pre-conventional Level</h3>
+            <p>Personal example: As a young child I remember when my mom would buy us treats like brownies or cookies and I would look at them before dinner and get scared of taking one because I was scared of being punished.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Kohlberg's Levels</div>
+            <h3>Conventional Level</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Kohlberg's Levels</div>
+            <h3>Post-conventional Level</h3>
+            <p>Personal
