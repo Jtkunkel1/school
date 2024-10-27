@@ -10,11 +10,11 @@
             margin: 0;
             padding: 0;
             background-color: #121212; /* Dark background */
-            color: #E0E0E0; /* Light text */
+            color: #e0e0e0; /* Light text color */
         }
         header {
-            background-color: #1E1E2F; /* Darker header */
-            color: #E0E0E0;
+            background-color: #1e1e1e; /* Darker header */
+            color: #ffffff; /* White text */
             text-align: center;
             padding: 2rem;
             font-size: 2rem;
@@ -31,7 +31,7 @@
             content: '';
             position: absolute;
             width: 4px;
-            background-color: #1E1E2F; /* Line color */
+            background-color: #1e88e5; /* Lighter blue line */
             top: 120px; /* Adjusted to start below the header */
             bottom: 0; /* Removed this to stop at the divider */
             left: 50%;
@@ -40,8 +40,8 @@
         .section-divider {
             margin: 2rem 0; /* Adjusted margins to better position dividers */
             font-size: 1.8rem;
-            color: #E0E0E0;
-            background-color: #1E1E2F; /* Darker section divider */
+            color: #ffffff; /* White text */
+            background-color: #1e1e1e; /* Dark background for divider */
             text-align: center;
             padding: 1rem;
             border-radius: 8px;
@@ -52,25 +52,25 @@
         }
         .stage {
             position: relative;
-            background-color: #1E1E2F; /* Darker stage background */
+            background-color: #222; /* Dark background for stages */
             border-radius: 10px;
             padding: 1.5rem;
             margin: 2rem 0;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow */
             width: 45%;
         }
         .stage h2 {
-            color: #BB86FC; /* Light purple for headings */
+            color: #1e88e5; /* Lighter blue for headings */
             font-size: 1.5rem;
         }
         .stage h3 {
-            color: #03DAC6; /* Light teal for subheadings */
+            color: #ffffff; /* White color for subheadings */
             font-size: 1.2rem;
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
         }
         .stage p {
-            color: #B0BEC5; /* Lighter gray for paragraph text */
+            color: #b0b0b0; /* Light gray for paragraph text */
             font-size: 1rem;
         }
         .stage:nth-child(odd) {
@@ -86,8 +86,8 @@
             top: 50%;
             width: 18px;
             height: 18px;
-            background-color: #BB86FC; /* Light purple for bullets */
-            border: 3px solid #1E1E2F; /* Darker border */
+            background-color: #1e88e5; /* Lighter blue */
+            border: 3px solid #222; /* Dark border */
             border-radius: 50%;
             z-index: 1;
             transform: translateY(-50%);
@@ -103,8 +103,8 @@
             top: 50%;
             width: 120px;
             padding: 10px;
-            background-color: #BB86FC; /* Light purple for labels */
-            color: #1E1E2F; /* Darker text color */
+            background-color: #1e88e5; /* Lighter blue for labels */
+            color: white;
             font-weight: bold;
             text-align: center;
             border-radius: 8px;
@@ -208,4 +208,38 @@
         <div class="stage">
             <div class="timeline-label">Piaget's Stages</div>
             <h3>Preoperational Stage (2 to 7 years)</h3>
-            <p>Personal example: When I was around age 4 or 5 I remember that I believed the moon would follow me a night
+            <p>Personal example: When I was around age 4 or 5 I remember that I believed the moon would follow me a night and no one else. I didn't think about how other people see it differently from me.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Piaget's Stages</div>
+            <h3>Concrete Operational Stage (7 to 11 years)</h3>
+            <p>Personal example: I think I was around 8 or 9 and in third grade and I remember my teacher explaining to me the concept of conservation, though she didn't call it that at the time, by pouring water back and forth between two different sized cups showing me that it didn't change the amount of water that was in each cup, I also remember it blowing my mind at the time.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Piaget's Stages</div>
+            <h3>Formal Operational Stage (12 years and up)</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <!-- Kohlberg's Moral Development Levels Divider -->
+        <div class="section-divider">Kohlberg's Moral Development Levels</div>
+
+        <div class="stage">
+            <div class="timeline-label">Kohlberg's Levels</div>
+            <h3>Pre-conventional Level</h3>
+            <p>Personal example: As a young child I remember when my mom would buy us treats like brownies or cookies and I would look at them before dinner and get scared of taking one because I was scared of being punished.</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Kohlberg's Levels</div>
+            <h3>Conventional Level</h3>
+            <p>Personal example: [Add your personal story here]</p>
+        </div>
+
+        <div class="stage">
+            <div class="timeline-label">Kohlberg's Levels</div>
+            <h3>Post-conventional Level</h3>
+            <p>Personal
+
